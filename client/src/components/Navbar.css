@@ -1,6 +1,6 @@
 .carousel-caption {
     position: absolute;
-    top: 250px;
+    top: 350px;
     left: 0;
     padding: 20px;
      text-align: left; 
@@ -10,6 +10,7 @@
     color: white;
     font-size: max(4.5vw,22px);
   }
+  
   .carousel-caption button{
 border: none;
 color: #747474;
@@ -18,4 +19,7 @@ padding: 1vw 2.3vw;
 background-color: white;
 font-size: max(1vw,13px);
 border-radius: 50px;
+  }
+  p{
+    font-size: medium;
   }

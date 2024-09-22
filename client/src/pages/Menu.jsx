@@ -35,8 +35,7 @@ export default function Menu() {
         <button className=" btn active mx-4" data-filter="all">All</button>
         <button className="btn mx-4" data-filter="snacks" >Snacks</button>
         <button className="btn mx-4" data-filter="desserts">Desserts</button>
-        <button className="btn mx-4" data-filter="beverages">Beverages</button>
-       
+        <button className="btn mx-4" data-filter="beverages">Beverages</button>       
       </div>
       </div>
       <div className="filter-content" style={{alignItems:"center"}}>
@@ -72,7 +71,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all snacks mx-5" data-filter=".snacks">
             <div className="box">
               <div className="img-box">
-                <img src="images\momos.jpg"/>
+                <img src="img\momos.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -101,7 +100,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all beverages mx-5" data-filter=".beverages" >
             <div className="box">
               <div className="img-box">
-                <img src="images\coffee.jpg"/>
+                <img src="img\coffee.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -129,7 +128,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all beverages mx-5" data-filter=".beverages">
             <div className="box">
               <div className="img-box">
-                <img src="images\SweetLassi.jpg"/>
+                <img src="img\SweetLassi.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -157,7 +156,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all desserts mx-5" data-filter=".desserts">
             <div className="box">
               <div className="img-box">
-                <img src="images\waffle.jpg"/>
+                <img src="img\waffle.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -182,7 +181,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all snacks mx-5" data-filter=".snacks">
             <div className="box">
               <div className="img-box">
-                <img src="images\sandwich.jpg"/>
+                <img src="img\sandwich.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -207,7 +206,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all beverages mx-5" data-filter=".snacks">
             <div className="box">
               <div className="img-box">
-                <img src="images\samosa2.jpg"/>
+                <img src="img\samosa2.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -232,7 +231,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all beverages mx-5" data-filter=".beverages">
             <div className="box">
               <div className="img-box">
-                <img src="images\cola.jpg"/>
+                <img src="img\cola.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -257,7 +256,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all desserts mx-5" data-filter=".desserts">
             <div className="box">
               <div className="img-box">
-                <img src="images\ice-cream.jpg"/>
+                <img src="img\ice-cream.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>
@@ -282,7 +281,7 @@ export default function Menu() {
           <div className="col-sm-4 col-lg-3 all snacks mx-5 mb-5" data-filter=".snacks">
             <div className="box">
               <div className="img-box">
-                <img src="images\Chole_Bhature.jpg"/>
+                <img src="img\Chole_Bhature.jpg"/>
               </div>
 <div className="detail-box"> 
 <h5>Delicious Pizza </h5>

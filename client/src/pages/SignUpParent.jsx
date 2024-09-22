@@ -8,6 +8,7 @@ export default function SignupParent() {
     email: "",
     password: "",
   });
+ 
   
   const handleInput = (event) => {
     let targetname = event.target.name;
@@ -33,10 +34,13 @@ export default function SignupParent() {
   };
 
   return (
+    <>
+    <div style={{marginTop:"100px" }}></div>
     <Signup
       userinfo={userinfo}
       handleInput={handleInput}
       handleSubmit={handleSubmit}
     ></Signup>
+    </>
   );
 }

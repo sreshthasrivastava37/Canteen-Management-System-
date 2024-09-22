@@ -1,13 +1,29 @@
 import Navbar from "../components/Navbar";
-// import Cardmenu from "../components/Cardmenu";
 import Footer from "../components/footer";
+import AddItems from "./AddItems";
+import Allitem from "./Allitem";
+import About from "./About";
+import { useAuth } from "../context/AuthContext";
 export default function Home() {
+  const { authinfo } = useAuth();
   return (
     <>
    <div>
     <Navbar/></div>
-    {/* <div><Cardmenu/></div> */}
-    <div><Footer/></div>
+    <div><Allitem/></div>
+    <div><About/></div>
+    {authinfo == null ? (
+                <>
+                 </>
+              ) : (
+                <>  
+    
+    <AddItems></AddItems>
+    
     </>
+              )}  
+              <div><Footer/></div>
+    </>
+    
   );
 }

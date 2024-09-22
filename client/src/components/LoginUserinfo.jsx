@@ -12,6 +12,7 @@ export default function LoginUserinfo() {
           <p className="text-end">Welcome : {email}</p>
         </div>
       </div> */}
+      
     </div>
   );
 }

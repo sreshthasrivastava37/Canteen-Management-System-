@@ -24,6 +24,7 @@ const signup= async(req,res)=>{
       }
 }
 
+
 const signIn = async (req,res)=>{
   try {
     const client = await MongoClient.connect('mongodb://localhost:27017/');
@@ -87,20 +88,7 @@ const addItems = async (req, res) =>  {
   
 
 
-// const updateItems= async(req,res)=>{
-//     try{
-//         const client = await MongoClient.connect('mongodb://localhost:27017/');
-//         const coll = client.db('canteen_ordering').collection('addItems');
-//         const data =req.body;
-//         // const filter= await ({itemname:data.itemname})
-//         await coll.updateOne({$set:{itemname: data.itemname,price:data.price,quantity:data.quantity}})
-//         client.close();
-//         res.send("updated")
 
-//     }catch(err){
-//         res.send("internal server error");
-//     }
-// }
 
 const searchFood = async (req,res)=>{
   const client = await MongoClient.connect('mongodb://localhost:27017/');

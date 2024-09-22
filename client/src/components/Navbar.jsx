@@ -24,10 +24,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon " ></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          {/* <form className="d-flex text-white mt-2 " style={{width:"400px"}}>
-        <input className="form-control me-2 bg-dark text-white " type="search" placeholder="Search for food" aria-label="Search"/>
-        <button className="btn btn-outline-success text-white" type="submit">Search</button>
-      </form> */}
+         
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link active text-white" aria-current="page" to="/">
@@ -40,7 +37,11 @@ export default function Navbar() {
                      Menu
                     </NavLink>
                   </li>
-             
+                  <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/about">
+                  About
+                </NavLink>   
+                </li>  
               {authinfo == null ? (
                 <>
                  <li className="nav-item">
@@ -49,7 +50,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="signup">
+                <NavLink className="nav-link text-white" to="/signup">
                   SignUp
                 </NavLink>
               </li>
@@ -57,18 +58,13 @@ export default function Navbar() {
               </>
               ) : (
                 <>
-                <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/order">
-                  Orders
-                </NavLink>   
-                </li>  
+               
                 <li className="nav-item">
                     <NavLink className="nav-link text-white" to="/additems">
                       AddFood
                     </NavLink>
                   </li>  
-                  
-                 
+                                   
               <li className="nav-item">
                 <NavLink className="nav-link text-white" to="logout">
                   Logout
@@ -98,12 +94,10 @@ export default function Navbar() {
           <div className="carousel-item active" data-bs-interval={5000}>
             <img src="img\carousel2.jpg" className="d-block w-100 " alt="..." height="743px" />
             <div className="carousel-caption d-none d-md-block">
-        <h5>Order your <br/>favourite food here</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Welcome to The <br/>Canteen!</h5>
+        <p>Order your favorite meals with ease and convenience.</p>
        
-        <NavLink className=" text-white" to="/menu">
-        <button className="btn btn-white"> Go to Menu</button>
-       </NavLink>
+        
        
          
       </div>
@@ -111,21 +105,16 @@ export default function Navbar() {
           <div className="carousel-item" data-bs-interval={5000}>
             <img src="img\carousel2.jpg" className=" d-block w-100 " alt="..." height="743px" />
             <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-        <NavLink className=" text-white" to="/menu">
-        <button className="btn btn-white"> Go to Menu</button>
-       </NavLink>
+        <h5>Order On-the-Go</h5>
+        <p >Skip the queue! Place your order from anywhere, anytime.</p>
       </div>
           </div>
           <div className="carousel-item" data-bs-interval={5000}>
             <img src="img\carousel2.jpg" className="d-block w-100 " alt="..." height="743px" />
             <div className="carousel-caption ">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-        <NavLink className=" text-white" to="/menu">
-        <button className="btn btn-white"> Go to Menu</button>
-       </NavLink>
+        <h5>Save Time, Eat Well!</h5>
+        <p>Fast, Easy, and Delicious – Your Favorite Meals, Just a Click Away!</p>
+       
       </div>
           </div>
         </div>

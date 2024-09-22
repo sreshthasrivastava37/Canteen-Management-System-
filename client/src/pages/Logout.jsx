@@ -8,5 +8,6 @@ export default function Logout() {
     deleteToken();
   }, [deleteToken]);
 
+  
   return  <Navigate to="/signin"></Navigate> 
 }

@@ -2,10 +2,12 @@ import { NavLink } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
 export default function SignUp({ userinfo, handleInput, handleSubmit }) {
   return (
+    
     <>
     <HeroSection />
       <div className="container mt-3 ">
-        <form method="POST" onSubmit={handleSubmit}>
+        <form method="POST" onSubmit={handleSubmit} style={{maxWidth: "540px",paddingRight:" 15px",
+             paddingLeft: "15px", marginRight: "auto", marginLeft: "auto",}}>
           <input
             type="text"
             className="form-control mt-3"

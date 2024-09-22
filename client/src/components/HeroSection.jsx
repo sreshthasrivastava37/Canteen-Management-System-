@@ -4,7 +4,7 @@ export default function HeroSection() {
   const { authinfo } = useAuth();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg  px-5 bg-dark">
+      <nav className="navbar navbar-expand-lg  px-5 bg-dark fixed-top ">
         <div className="container-fluid">
           <NavLink className="navbar-brand text-white" to="/">
           Quick-Bite
@@ -32,6 +32,11 @@ export default function HeroSection() {
                     Menu
                     </NavLink>
                     </li>
+                    <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/about">
+                  About
+                </NavLink>   
+                </li>  
               {authinfo == null ? (
                 <>
                  <li className="nav-item">
@@ -40,7 +45,7 @@ export default function HeroSection() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="signup">
+                <NavLink className="nav-link text-white" to="/signup">
                   SignUp
                 </NavLink>
               </li>
@@ -48,20 +53,14 @@ export default function HeroSection() {
               </>
               ) : (
                 <>  
-                 <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/order">
-                  Orders
-                </NavLink>   
-                </li>  
+                
                 <li className="nav-item">
                     <NavLink className="nav-link text-white" to="/additems">
                       AddFood
                     </NavLink>
-                  </li>  
-                  
-                 
+                  </li>                   
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="logout">
+                <NavLink className="nav-link text-white" to="/logout">
                   Logout
                 </NavLink>
               </li> 

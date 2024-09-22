@@ -12,6 +12,7 @@ export default function AddItems() {
     foodimg:""
   });
   console.log(authinfo);
+  
   const handleInput = (event) => {
     let targetname = event.target.name;
     let value = event.target.value;
@@ -48,11 +49,20 @@ export default function AddItems() {
     }
   };
   return (
+    <>
+    <div style={{marginTop:"10px", height:"100px"}}>
+     <div style={{marginTop:"80px", height:"100px", textAlign:"center",fontFamily: "Italic"}}>
+      <h1>Add Food Item</h1>
+      </div>
+    </div>
+   
     <AdditemsUi
       eventinfo={eventinfo}
       handleInput={handleInput}
       handleInputimage={handleInputimage}
       handleSubmit={handleSubmit}
+      
     ></AdditemsUi>
+    </>
   );
 }

@@ -3,12 +3,13 @@ import '../pages/Menu.css'
 
 export default function Cardmenu({item}) {
   return (
-    <>
-   
-    <div className='food_section col-md-4 mt-5'>
-      <div class="box mt-5">
+    <>  
+    
+    <div className='food_section col-md-4 mt-4 '>
+      <div class="box mt-5 ms-5">
         <div className='img-box'>
-        <img src={item.foodimg} class="card-img-top" alt=""/>
+        <img className='text-dark' src={item.foodimg} class="card-img-top" alt={item.foodimg}/>
+        {/* <p className='text-dark'>{item.foodimg}</p> */}
         </div>
       
         <div class="detail-box">
@@ -20,17 +21,14 @@ export default function Cardmenu({item}) {
             <select className=" quantity m-2 h-10 w-10 bg-light rounded">
     {Array.from(Array(6),(e,i)=>{
       return <option key={i+1} value={i+1}>{i+1}</option>
-    })}
-  </select>
-  <select className="m-2 h-10 w-10 bg-light rounded">
-<option value="half">Half</option>
-<option value="full">Full</option>
+    }
+    )}
   </select>
            
         </div>
         </div>
-    </div>
+    </div>
 
 </>
-  )
+  )
 }

@@ -4,7 +4,6 @@ const generateAccessToken = (user)=> {
   const payload = {
     email: user.Email
   };
-  
   const secret = 'I Like ABESIT';
   const options = { expiresIn: 180 };
 
